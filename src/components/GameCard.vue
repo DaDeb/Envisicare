@@ -20,6 +20,9 @@ const LEFT_E = "leftE";
 const DOWN_E = "downE";
 const UP_E = "upE";
 
+var windowWidth = window.innerWidth / 2;
+var windowHight = window.innerHeight / 2;
+
 export default {
   static: {
     interactMaxRotation: 15,
@@ -157,7 +160,7 @@ export default {
     },
 
     interactSetPosition(coordinates) {
-      const { x = 0, y = 0, rotation = 0 } = coordinates;
+      const { x = windowWidth, y = windowHight, rotation = 0 } = coordinates;
       this.interactPosition = { x, y, rotation };
     },
 
