@@ -13,7 +13,6 @@
 
 <script>
 import GameCardsStack from "./components/GameCardsStack";
-
 export default {
   name: "App",
   components: {
